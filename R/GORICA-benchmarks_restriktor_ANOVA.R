@@ -223,7 +223,7 @@ benchmarks_ANOVA <- function(goric_obj, pop.es = .2, ratio.pop.means = NULL, oth
 
       #set.seed(123)
       # GORICA or GORICA depending on what is done in data
-      results.goric <- goric(fit, constraints = hypos, comparison = goric_obj$comparison, type = goric_obj$type)
+      results.goric <- goric(fit, hypotheses = hypos, comparison = goric_obj$comparison, type = goric_obj$type)
       #
       #Test
       #goric(fit, constraints = hypos, comparison = goric_obj$comparison, type = "gorica")
